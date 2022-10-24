@@ -63,8 +63,8 @@ class Menu:
             age = int(input('Введите свой возраст: '))
             motto_in_life = input('Введите девиз по жизни: ')
             if name and age and motto_in_life:
-                new_player = Player(name, age, motto_in_life)
-            print(new_player.player_info())
+                new_player = Player(name, age, motto_in_life) 
+                print(new_player.player_info())
         elif code == 3:
             print('\nИгра разработана через TDD\n')
         else:
