@@ -36,13 +36,13 @@ class Game:
             print(user_answer)
 
 class Player:
-    def __init__(self, name, age, motto_in_life):
+    def __init__(self, name, age, family):
         self.name = name
         self.age = age
-        self.motto_in_life = motto_in_life
+        self.family = family
 
     def player_info(self):
-        print(f'\nИнформация об игроке: \n Имя: {self.name}, \n Возраст: {self.age}, \n Девиз по жизни: {self.motto_in_life}\n')
+        print(f'\nИнформация об игроке: \n Имя: {self.name}, \n Возраст: {self.age}, \n Фамилия: {self.family}\n')
 
 class Menu:
 
@@ -61,9 +61,9 @@ class Menu:
             print('Перед началом игры заполните поля: \n')
             name = input('Введите свое имя: ')
             age = int(input('Введите свой возраст: '))
-            motto_in_life = input('Введите девиз по жизни: ')
-            if name and age and motto_in_life:
-                new_player = Player(name, age, motto_in_life) 
+            family = input('Введите фамилию: ')
+            if name and age and family:
+                new_player = Player(name, age, family) 
                 print(new_player.player_info())
         elif code == 3:
             print('\nИгра разработана через TDD\n')

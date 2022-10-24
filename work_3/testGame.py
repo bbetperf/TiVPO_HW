@@ -36,7 +36,7 @@ class GameTest(unittest.TestCase):
 
     def test_player_info(self):
         player = Player('Максим', 19, 'Привет')
-        return "\nИнформация об игроке: \n Имя: {self.name}, \n Возраст: {self.age}, \n Девиз по жизни: {self.motto_in_life}\n"
+        return "\nИнформация об игроке: \n Имя: {self.name}, \n Возраст: {self.age}, \n Фамилия: {self.family}\n"
 
     def test_menu(self):
         menu = Menu()
